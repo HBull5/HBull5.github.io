@@ -14,6 +14,12 @@ p {
   vertical-align: middle;
 }
 
+.img  {
+  width: 500px;
+  height: auto;
+  display: table-cell;
+}
+
 .box1 {
   height: 100vh;
   width: 100%;
