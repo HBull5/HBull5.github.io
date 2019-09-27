@@ -14,10 +14,25 @@ p {
   vertical-align: middle;
 }
 
+span {
+  font-size: 35px;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.color {
+  color: white;
+  padding: 25px;
+}
+
 .img  {
   width: 500px;
   height: auto;
   display: table-cell;
+  margin-top: 150px;
 }
 
 .box1 {
@@ -53,5 +68,4 @@ p {
   background-color: darkcyan;
   background-size: cover;
   background-position: center;
-  display: table;
 }
