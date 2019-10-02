@@ -17,7 +17,6 @@ li {
 
 #programmer {
   margin-left: auto;
-  margin-top: 25px;
 }
 
 #hacker {
@@ -101,13 +100,11 @@ li {
   padding-left: 400px;
   padding-right: 400px;
   font-size: 20px;
-  margin-top: 0px;
   text-align: center;
 }
 
 #heading {
   font-size: 58px;
-  margin-bottom: 0px;
 }
 
 .box1 {
