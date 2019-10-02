@@ -4,12 +4,14 @@
   I'm a student and self-taught web developer with a love of computation. I’m a hard worker, a team player and excited to see what projects could benefit from my unique skill set!
 
 * My Work 
-    [Front-end, back-end, Hardware]
+    [Front-end, back-end, Hardware, Frameworks]
 
 * Future Ventures
+  []
 
 * Stay connected
   [twitter, (make)instagram, facebook, linkedIn(make), github, discord(make)]
 
-  colors #191919 dark 
+  colors:
+  bluesteel
   white

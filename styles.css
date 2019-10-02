@@ -6,10 +6,51 @@ body {
 
 img {
   display: block;
-  margin-left: auto;
-  margin-top: 25px;
+
   width: 375px;
   height: auto;
+}
+
+li {
+  color: black;
+}
+
+#programmer {
+  margin-left: auto;
+  margin-top: 25px;
+}
+
+#hacker {
+  margin-right: auto;
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.unordered {
+  list-style: none;
+}
+
+.unorder {
+  list-style: none;
+}
+
+.unorder>li:nth-of-type(even) {
+  color: steelblue;
+}
+
+.largeText {
+  font-size: 20px;
+}
+
+.para {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+.futureList {
+  font-size: 30px;
+  text-align: center;
 }
 
 .col {
@@ -19,11 +60,20 @@ img {
   flex: 1;
 }
 
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
 
 .margin {
@@ -87,6 +137,7 @@ img {
   background-size: cover;
   background-position: center;
   z-index: 1;
+  color: steelblue;
 }
 
 .box4 {
