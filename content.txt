@@ -15,3 +15,4 @@
   colors:
   bluesteel
   white
+  black

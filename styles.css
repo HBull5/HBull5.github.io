@@ -31,7 +31,7 @@ li {
 }
 
 .unorder {
-  list-style: none;
+  list-style: none; 
 }
 
 .unorder>li:nth-of-type(even) {
