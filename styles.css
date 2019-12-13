@@ -188,6 +188,18 @@ img {
     color: #fff;
 }
 
+
+@media only screen and (max-width: 800px) {
+    
+    .navbar {
+        display: none;
+    }
+
+}
+
+
+
+
 @media only screen and (max-width: 500px) {
 
     body, html {
