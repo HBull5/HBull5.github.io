@@ -1,0 +1,41 @@
+/* default */
+html, body {
+    font-size: 8px;
+}
+
+/* showcase */
+#showcase .container .illustration {
+    display: none;
+}
+
+/* services */
+#services {
+    height: 110vh;
+}
+
+#services .row h3 {
+    margin-bottom: 2rem;
+}
+
+#services .row {
+    flex-direction: column;
+    padding: 0 8rem;
+}
+
+/* portfolio */
+#portfolio {
+    height: 190vh;
+}
+
+#portfolio .row a {
+    padding-bottom: 2rem;
+}
+
+#portfolio .row a img {
+    width: 50vw;
+}
+
+#portfolio .row {
+    display: flex;
+    flex-direction: column;
+}

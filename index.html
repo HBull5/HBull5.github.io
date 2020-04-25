@@ -9,18 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link media="screen and (max-width: 1050px)" rel="stylesheet" href="tablet.css">
+    <link media="screen and (max-width: 450px)" rel="stylesheet" href="mobile.css">
     <title>Harcourt Bull | Web-Dev</title>
 </head>
 <body>
     <!-- navbar -->
     <header id="navbar">
         <div class="logo">
-            <h1><a href="#">Harcourt Bull V</a></h1>
+            <h1><a href="#">Harcourt Bull</a></h1>
         </div>
         <ul>
-            <li><a href="#">about</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#footerWave">contact</a></li>
         </ul>
     </header>
     <!-- showcase -->
@@ -33,7 +36,7 @@
                 <a href="#">View My Work &#10140;</a>
             </div>
             <div class="illustration">
-                <img src="img/7.svg" alt="img">
+                <img src="img/showcase.svg" alt="showcase-img">
             </div>
         </div>
     </section>
@@ -42,66 +45,110 @@
     <section id="about">
         <div class="heading">
             <h3>Who Am I?</h3>
-            <p>I'm fullstack devloper currently studying computer programming at Augusta Technical College. My expierence so far has been teaching at the Clubhou.se coding bootcamp located in the Georgia Cyber Center and building websites for friends, family, and small businesses.</p>
+            <p>I'm fullstack devloper currently studying computer programming at Augusta Technical College. My expierence so far has been teaching at the Clubhou.se coding bootcamp located in the Georgia Cyber Center and building websites for friends, family, and small businesses. Below are some of the many tongues I speak.</p>
         </div>
         <div class="skills">
-            <h3>I Speak Many Tongues</h3>
             <div class="row">
                 <div class="col">
-                    <p>HTML</p>
                     <i id="html" class="fab fa-html5"></i>
+                    <p>HTML</p>
                 </div>
                 <div class="col">
-                    <p>CSS</p>
                     <i id="css" class="fab fa-css3-alt"></i>
+                    <p>CSS</p>
                 </div>
                 <div class="col">
-                    <p>Javascript</p>
                     <i id="javascript" class="fab fa-js"></i>
+                    <p>Javascript</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <p>PHP</p>
                     <i id="php" class="fab fa-php"></i>
+                    <p>PHP</p>
                 </div>
                 <div class="col">
-                    <p>Node.JS</p>
                     <i id="node" class="fab fa-node"></i>
+                    <p>Node.JS</p>
                 </div>
                 <div class="col">
-                    <p>SQL</p>
                     <i class="fas fa-database"></i>
+                    <p>SQL</p>
                 </div>
             </div>
-            <div class="row around">
+            <div class="row">
                 <div class="col">
-                    <p>Java</p>
                     <i id="java" class="fab fa-java"></i>
+                    <p>Java</p>
                 </div>
                 <div class="col">
-                    <p>React</p>
                     <i id="react" class="fab fa-react"></i>
+                    <p>React</p>
                 </div>
                 <div class="col">
-                    <p>Bootstrap</p>
                     <i id="bootstrap" class="fab fa-bootstrap"></i>
+                    <p>Bootstrap</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- middle -->
-    <section id="middle">
-
+    <!-- services -->
+    <section id="services">
+        <div class="row">
+            <h3>Services</h3>
+        </div>
+        <div class="row">
+            <div class="col">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Design</h3>
+                <p>Like what you see? I build quality mobile first responsive webpages with a sharp modern style, let me build your next website for your business or personal brand!</p>
+            </div>
+            <div class="col">
+                <i class="fas fa-cogs"></i>
+                <h3>Development</h3>
+                <!-- I create online web applications and advanced products for businesses or clientele that require sophisticated online programs. These are user-intuitive, lightweight, and mobile friendly. -->
+                <p>Development is my passion, I create responsive webpages and web applications. These are simple, intuitive, lightweight, mobile-friendly webpages and applications.</p>
+            </div>
+            <div class="col">
+                <i class="fas fa-server"></i>
+                <h3>Hosting Solutions</h3>
+                <!-- I provide hassle-free hosting. As I complete your project/site, I optimize it for fast load times on any server, however, I offer hosting management that ensures optimum site performance. Domain email services are available, as long as you own a domain name. -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti impedit asperiores excepturi cumque voluptatum expedita. Numquam earum quia corporis.</p>
+            </div>
+            <div class="col">
+                <i class="fas fa-redo-alt"></i>
+                <h3>Web Redesign</h3>
+                <!-- Have a website that seems out of date? I’ll update the content, media, and design of your website to modern standards. Your website will have the same content with a great new look and feel that is mobile friendly with a fantastic layout. -->
+                <p>Don't like your current website? I'll redesign your website to ensure it looks great on all screen sizes. I can even update your old sites content and personal branding.</p>
+            </div>
+        </div>
+        <div class="row">
+            <a href="#footerWave">Contact Me &#10140;</a>
+        </div>
     </section>
+
+   <!-- portfolio -->
+   <section id="portfolio">
+        <h3>Portfolio</h3>
+        <div class="row">
+            <a href="#"><img src="img/photography-site.png" alt="photography-site"></a>
+            <a href="#"><img src="img/tech-project.png" alt="php-admin-site"></a>
+            <a href="#"><img src="img/library.png" alt="library-app"></a>
+        </div>
+        <div class="row">
+            <a href="#"><img src="img/pallindrome.png" alt="pallindrome"></a>
+            <a href="#"><img src="img/dec-hex.png" alt="dec-hex-converter"></a>
+            <a href="#"><img src="img/image-gallery.png" alt="img-gallery"></a>
+        </div>
+   </section>
 
     <!-- footer -->
     <section id="footerWave">
         <div class="wave"></div>
     </section>
     <footer>
-        <h3>Lets Be Internet Friends!</h3>
+        <h3>Get In Touch</h3>
         <div class="icons">
             <i class="fab fa-github"></i>
             <i class="fab fa-twitter"></i>
