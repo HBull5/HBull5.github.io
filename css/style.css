@@ -80,7 +80,7 @@ a {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    background: url('img/greyWave.png');
+    background: url('../img/greyWave.png');
     width: 100%;
     height: 100px;
     background-size: 1000px 100px;
@@ -297,7 +297,7 @@ a {
 #footerWave .wave {
     position: absolute;
     top: 0px;
-    background: url('img/upsidedownWave.png');
+    background: url('../img/upsidedownWave.png');
     width: 100%;
     height: 100px;
     background-size: 1000px 100px;

@@ -3,9 +3,23 @@ html, body {
     font-size: 8px;
 }
 
+/* waves */
+#showcase .wave {
+    display: none;
+}
+
+#footerWave {
+    display: none;
+}
+
 /* showcase */
 #showcase .container .illustration {
     display: none;
+}
+
+/* about */
+#about .heading {
+    padding-top: 0;
 }
 
 /* services */
@@ -38,4 +52,9 @@ html, body {
 #portfolio .row {
     display: flex;
     flex-direction: column;
+}
+
+/* footer */
+footer {
+    height: 10vh;
 }
