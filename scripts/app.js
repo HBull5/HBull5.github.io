@@ -23,6 +23,7 @@ window.onscroll = function() {
 }
 
 toggle.addEventListener('click', () => {
+    let currentScrollPos = window.pageYOffset;
     if(bg === '#fff') {
         bg = '#333';
         text = '#fff';
@@ -31,6 +32,11 @@ toggle.addEventListener('click', () => {
         bg = '#fff';
         text = '#333';
         filter = 'rgba(255, 255, 255, 0.7)';
+    }
+    if(currentScrollPos === 0) {
+        navbar.style.background = 'none';
+    } else {
+        navbar.style.background = bg;
     }
     body.style.background = bg;
     body.style.color = text;

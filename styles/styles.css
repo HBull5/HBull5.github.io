@@ -36,6 +36,7 @@ ul {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
+  padding: 3rem 2rem;
 }
 
 .flex-items {
@@ -63,6 +64,9 @@ ul {
 .dark-bg {background: var(--dark)}
 .light-bg {background: var(--light)}
 
+.m-1 {margin: 1rem}
+.m-2 {margin: 2rem}
+.m-3 {margin: 3rem}
 .my-1 {margin: 1rem 0}
 .my-2 {margin: 2rem 0}
 .my-3 {margin: 3rem 0}
@@ -77,6 +81,9 @@ ul {
 .mb-3 {margin-bottom: 3rem}
 .mx-auto {margin: 0 auto}
 
+.p-1 {padding: 1rem}
+.p-2 {padding: 2rem}
+.p-3 {padding: 3rem}
 .py-1 {padding: 1rem 0}
 .py-2 {padding: 2rem 0}
 .py-3 {padding: 3rem 0}
@@ -212,7 +219,6 @@ ul {
 #showcase .container {
   z-index: 1;
   width: 100%;
-  padding: 1rem;
 }
 
 #showcase .container .content {
@@ -252,24 +258,28 @@ ul {
 }
 
 /* about */
-#about {
+#about .container {
   display: flex;
-  height: 50vh;
-  width: 100%;
-  flex-direction: column;
+  height: 100%;
   align-items: center;
-  justify-content: center;
 }
 
-#about .about-grid {
+#about .container .about-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-gap: 3rem;
+  align-items: center;
 }
 
-#about .about-grid .content h2 {
+#about .container .about-grid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#about .container .about-grid .content h2 {
   font-size: 2.5rem;
 }
 
-#about .about-grid .content p {
+#about .container .about-grid .content p {
   font-size: 1.3rem;
 }
