@@ -3,163 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font-Awesome -->
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/47ace9daa2.js" crossorigin="anonymous"></script>
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 850px)" href="css/tablet.css">
-    <link rel="stylesheet" media="screen and (max-width: 450px)" href="css/mobile.css">
-    <link rel="stylesheet" media="screen and (max-height: 620px)" href="css/landscape.css">
-    <link rel="stylesheet" media="screen and (max-width: 320px)" href="css/xtra-small.css">
-    <link rel="stylesheet" media="screen and (max-height: 320px)" href="css/xtra-small-landscape.css">
     <title>Harcourt Bull | Web-Dev</title>
 </head>
 <body>
-    <!-- navbar -->
-    <header id="navbar">
+
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="container">
         <div class="logo">
-            <h1><a href="#">Harcourt Bull</a></h1>
+          <img src="img/logo.png" alt="logo">
+          <h2><a href="#showcase">Harcourt Bull</h2></a>
         </div>
         <ul>
-            <li><a href="#about">about</a></li>
-            <li><a href="#services">services</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#footerWave">contact</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact</a></li>
+          <li class="toggle">
+            <input type="checkbox">
+            <div class="switch"></div>
+          </li>
         </ul>
-    </header>
-    <!-- showcase -->
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Showcase -->
     <section id="showcase">
-        <div class="wave"></div>
-        <div class="container">
-            <div class="content">
-                <h1>Hello! I'm Harcourt Bull</h1>
-                <p>So for starters its pronounced (Har·court) but you can call me Nick. I'm a dependable, hard working team player and I'm excited to see what projects could benefit from my unique skill set!</p>
-                <a href="#">View My Work &#10140;</a>
-            </div>
-            <div class="illustration">
-                <img src="img/showcase.svg" alt="showcase-img">
-            </div>
+      <div class="video-container"> 
+        <video src="img/video.mp4" autoplay loop muted></video>
+      </div>
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="content">
+          <h2 class="mb-1">Hi, I'm Harcourt the <span id="typewriter"></span></h2>
+          <p class="mb-1">So for starters its pronounced (Har·court) but you can call me Nick. I'm a dependable, hard working team player. I'm excited to see what projects could benefit from my unique skill set!</p>
+          <div class="flex-items mx-auto">
+            <a href="#portfolio" class="btn primary-bg">View My Work</a>
+            <a href="#about" class="btn secondary-bg dark-text">More About Me</a>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- End Showcase -->
 
-    <!-- about -->
+    <!-- About -->
     <section id="about">
-        <div class="heading">
-            <h3>Who Am I?</h3>
-            <p>I'm fullstack devloper currently studying computer programming at Augusta Technical College. My expierence so far has been teaching at the Clubhou.se coding bootcamp located in the Georgia Cyber Center and building websites for friends, family, and small businesses. Below are some of the many tongues I speak.</p>
+      <div class="container about-grid">
+        <div class="content">
+          <h2 class="mb-1">Who is this guy?</h2>
+          <p>I'm a web developer living and working in Augusta GA. I'm a veteran currently pursuing my Associates Degree in Computer Programming at Augusta Technical College due to graduate in mid August. During that time I've been interning as at the <a class="link" href="https://www.theclubhou.se/" target="_blank">Clubhou.se</a> helping teach others web development. For more info feel free to check out my <a href="#" class="link">resumé</a> or send me a <a href="#contact" class="link">message</a> about an upcoming project!</p>
         </div>
-        <div class="skills">
-            <div class="row">
-                <div class="col">
-                    <i id="html" class="fab fa-html5"></i>
-                    <p>HTML</p>
-                </div>
-                <div class="col">
-                    <i id="css" class="fab fa-css3-alt"></i>
-                    <p>CSS</p>
-                </div>
-                <div class="col">
-                    <i id="javascript" class="fab fa-js"></i>
-                    <p>Javascript</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <i id="php" class="fab fa-php"></i>
-                    <p>PHP</p>
-                </div>
-                <div class="col">
-                    <i id="node" class="fab fa-node"></i>
-                    <p>Node.JS</p>
-                </div>
-                <div class="col">
-                    <i class="fas fa-database"></i>
-                    <p>SQL</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <i id="java" class="fab fa-java"></i>
-                    <p>Java</p>
-                </div>
-                <div class="col">
-                    <i id="react" class="fab fa-react"></i>
-                    <p>React</p>
-                </div>
-                <div class="col">
-                    <i id="bootstrap" class="fab fa-bootstrap"></i>
-                    <p>Bootstrap</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
+    <!-- End About -->
 
-    <!-- services -->
-    <section id="services">
-        <div class="row">
-            <h3>Services</h3>
-        </div>
-        <div class="row">
-            <div class="col">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Design</h3>
-                <p>Like what you see? I build quality mobile first responsive webpages with a sharp modern style, let me build your next website for your business or personal brand!</p>
-            </div>
-            <div class="col">
-                <i class="fas fa-cogs"></i>
-                <h3>Development</h3>
-                <!-- I create online web applications and advanced products for businesses or clientele that require sophisticated online programs. These are user-intuitive, lightweight, and mobile friendly. -->
-                <p>Development is my passion, I create responsive webpages and web applications. These are simple, intuitive, lightweight, mobile-friendly webpages and applications.</p>
-            </div>
-            <div class="col">
-                <i class="fas fa-server"></i>
-                <h3>Hosting Solutions</h3>
-                <!-- I provide hassle-free hosting. As I complete your project/site, I optimize it for fast load times on any server, however, I offer hosting management that ensures optimum site performance. Domain email services are available, as long as you own a domain name. -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti impedit asperiores excepturi cumque voluptatum expedita. Numquam earum quia corporis.</p>
-            </div>
-            <div class="col">
-                <i class="fas fa-redo-alt"></i>
-                <h3>Web Redesign</h3>
-                <!-- Have a website that seems out of date? I’ll update the content, media, and design of your website to modern standards. Your website will have the same content with a great new look and feel that is mobile friendly with a fantastic layout. -->
-                <p>Don't like your current website? I'll redesign your website to ensure it looks great on all screen sizes. I can even update your old sites content and personal branding.</p>
-            </div>
-        </div>
-        <div class="row">
-            <a href="#footerWave">Contact Me &#10140;</a>
-        </div>
+    <!-- Projects -->
+    <section id="projects">
+      
     </section>
-
-   <!-- portfolio -->
-   <section id="portfolio">
-        <h3>Portfolio</h3>
-        <div class="row">
-            <a href="https://foltz-photography.herokuapp.com/"><img src="img/photography-site.png" alt="photography-site"></a>
-            <a href="https://github.com/HBull5/PHP2_TechProject"><img src="img/tech-project.png" alt="php-admin-site"></a>
-            <a href="https://github.com/HBull5/libraryApp"><img src="img/library.png" alt="library-app"></a>
-        </div>
-        <div class="row">
-            <a href="https://github.com/HBull5/pallendrome-"><img src="img/pallindrome.png" alt="pallindrome"></a>
-            <a href="https://github.com/HBull5/Hexadecimal-Decimal-Converter"><img src="img/dec-hex.png" alt="dec-hex-converter"></a>
-            <a href="https://github.com/HBull5/imageGallery"><img src="img/image-gallery.png" alt="img-gallery"></a>
-        </div>
-   </section>
-
-    <!-- footer -->
-    <section id="footerWave">
-        <div class="wave"></div>
-    </section>
-    <footer>
-        <h3>Get In Touch</h3>
-        <div class="icons">
-            <i class="fab fa-github"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="far fa-envelope"></i>
-        </div>
-    </footer>
+    <!-- End Projects -->
 
 <script src="scripts/app.js"></script>
+<script src="scripts/typewriter.js"></script>
 </body>
 </html>
