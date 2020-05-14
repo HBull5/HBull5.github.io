@@ -120,7 +120,7 @@ ul {
   font-weight: normal;
   position: relative;
   top: 3px;
-  left: -5px;
+  left: -12px;
 }
 
 #navbar .container .logo h2:hover {
@@ -183,7 +183,7 @@ ul {
   display: flex; 
   justify-content: center;
   align-items: center;
-  background: url('https://images.pexels.com/photos/3773835/pexels-photo-3773835.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background: url('../img/background.jpeg');
   background-attachment: fixed;
 }
 
@@ -229,7 +229,9 @@ ul {
 }
 
 #showcase .container .content .flex-items .btn:hover {
-  opacity: 0.8;
+  background: var(--primary) !important;
+  color: var(--dark) !important;
+  transition: background 0.4s; 
 }
 
 /* about */
@@ -256,4 +258,17 @@ ul {
 
 #about .container .about-grid .content p {
   font-size: 1.3rem;
+}
+
+/* Portfolio */
+#portfolio {
+  height: 40vh;
+  width: 100%;
+}
+
+/* Footer */
+#footer {
+  height: 15vh;
+  width: 100%;
+  background: var(--light);
 }
