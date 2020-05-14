@@ -275,7 +275,7 @@ ul {
 #project .container .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 #project .container .project-grid img {
@@ -284,5 +284,21 @@ ul {
 }
 
 #project .container .project-grid .card {
-  text-align: center;
+  position: relative;
+}
+
+#project .container .project-grid .card:hover:first-child:after {
+  content: 'HTML / CSS / PHP';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(155, 219, 25, 0.7);
+  border-radius: 5px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  color: var(--dark) !important;
+  font-size: 2rem;
 }
