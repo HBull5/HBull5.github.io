@@ -259,16 +259,3 @@ ul {
 #about .container .about-grid .content p {
   font-size: 1.3rem;
 }
-
-/* Portfolio */
-#portfolio {
-  height: 40vh;
-  width: 100%;
-}
-
-/* Footer */
-#footer {
-  height: 15vh;
-  width: 100%;
-  background: var(--light);
-}
