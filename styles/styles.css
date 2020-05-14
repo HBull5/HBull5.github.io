@@ -1,6 +1,5 @@
 :root {
-  --primary: steelblue;
-  --secondary: skyblue;
+  --primary: rgb(155, 219, 25);
   --light: #fff;
   --dark: #333;
   --grey: #f4f4f4;
@@ -55,12 +54,10 @@ ul {
 }
 
 .primary-text {color: var(--primary)}
-.secondary-text {color: var(--secondary)}
 .dark-text {color: var(--dark)}
 .light-text {color: var(--light)}
 
 .primary-bg {background: var(--primary)}
-.secondary-bg {background: var(--secondary)}
 .dark-bg {background: var(--dark)}
 .light-bg {background: var(--light)}
 
@@ -126,6 +123,10 @@ ul {
   left: -5px;
 }
 
+#navbar .container .logo h2:hover {
+  color: var(--primary);
+}
+
 #navbar .container ul {
   display: flex;
   align-items: center;
@@ -135,7 +136,6 @@ ul {
 #navbar .container ul li a {
   padding: 1.5rem;
   font-size: 1.3rem;
-  transition: color 1s;
 }
 
 #navbar .container ul li a:hover {
@@ -145,7 +145,7 @@ ul {
 .toggle {
   height: 20px;
   width: 40px;
-  background: #333;
+  background: var(--primary);
   border-radius: 25px;
   position: relative;
 }
@@ -175,7 +175,6 @@ ul {
   transform: translateX(20px);
 }
 
-
 /* showcase */
 #showcase {
   position: relative;
@@ -184,26 +183,8 @@ ul {
   display: flex; 
   justify-content: center;
   align-items: center;
-}
-
-.video-container {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  background: var(--light) url('../img/video.png') no-repeat center center/cover;
-}
-
-.video-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background: url('https://images.pexels.com/photos/3773835/pexels-photo-3773835.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-attachment: fixed;
 }
 
 .overlay {
@@ -213,12 +194,12 @@ ul {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.6);
 }
 
 #showcase .container {
-  z-index: 1;
   width: 100%;
+  z-index: 1;
 }
 
 #showcase .container .content {
@@ -232,7 +213,7 @@ ul {
 }
 
 #showcase .container .content h2 #typewriter {
-  border-right: 1px solid #000;
+  border-right: 1px solid var(--primary);
 }
 
 #showcase .container .content p {
@@ -267,7 +248,6 @@ ul {
 #about .container .about-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 3rem;
   align-items: center;
 }
 

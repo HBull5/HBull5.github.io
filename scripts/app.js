@@ -5,7 +5,7 @@ let overlay = document.querySelector('.overlay');
 let prevScrollpos = window.pageYOffset;
 let bg = '#fff';
 let text = '#333';
-let filter = 'rgba(255, 255, 255, 0.7)';
+let filter = 'rgba(255, 255, 255, 0.6)';
 
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
@@ -31,7 +31,7 @@ toggle.addEventListener('click', () => {
     } else {
         bg = '#fff';
         text = '#333';
-        filter = 'rgba(255, 255, 255, 0.7)';
+        filter = 'rgba(255, 255, 255, 0.6)';
     }
     if(currentScrollPos === 0) {
         navbar.style.background = 'none';
