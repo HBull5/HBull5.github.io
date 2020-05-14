@@ -266,23 +266,23 @@ ul {
   font-size: 1.3rem;
 }
 
-/* Portfolio */
-#portfolio .container h2 {
+/* project */
+#project .container h2 {
   font-size: 3rem;
   text-align: center;
 }
 
-#portfolio .container .portfolio-grid {
+#project .container .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
 
-#portfolio .container .portfolio-grid img {
+#project .container .project-grid img {
   width: 100%;
   border-radius: 5px;
 }
 
-#portfolio .container .portfolio-grid .card {
+#project .container .project-grid .card {
   text-align: center;
 }
