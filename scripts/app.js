@@ -1,5 +1,6 @@
 let navbar = document.querySelector('#navbar');
 let toggle = document.querySelector('.toggle');
+let toggleSwitch = document.querySelector('.switch');
 let body = document.querySelector('body');
 let overlay = document.querySelector('.overlay');
 let buttons = document.querySelectorAll('.btn');
@@ -33,11 +34,13 @@ toggle.addEventListener('click', () => {
         text = '#fff';
         filter = 'rgba(0, 0, 0, 0.7)';
         logoColor = 'white';
+        toggleSwitch.innerHTML = '<i class="fas fa-moon"></i>';
     } else {
         bg = '#fff';
         text = '#333';
         filter = 'rgba(255, 255, 255, 0.7)';
         logoColor = 'black';
+        toggleSwitch.innerHTML = '<i class="far fa-sun"></i>';
     }
     if(currentScrollPos === 0) {
         navbar.style.background = 'none';
