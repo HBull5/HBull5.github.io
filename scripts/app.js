@@ -5,6 +5,8 @@ let overlay = document.querySelector('.overlay');
 let buttons = document.querySelectorAll('.btn');
 let homeBtn = document.querySelector('#home-btn');
 let logo = document.querySelector('#logo');
+let cards = document.querySelectorAll('.card');
+let footer = document.querySelector('#footer');
 let prevScrollpos = window.pageYOffset;
 let bg = '#fff';
 let text = '#333';
@@ -54,6 +56,12 @@ toggle.addEventListener('click', () => {
         button.style.background = text;
         button.style.color = bg;
     }
+    for(card of cards) {
+        card.style.background = text;
+        card.style.color = bg;
+    }
+    footer.style.background = text;
+    footer.style.color = bg;
 })
 
 homeBtn.addEventListener('mouseover', () => {
