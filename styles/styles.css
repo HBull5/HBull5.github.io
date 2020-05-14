@@ -194,7 +194,7 @@ ul {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 #showcase .container {
@@ -228,14 +228,8 @@ ul {
   margin: 0 0.5rem;
 }
 
-#showcase .container .content .flex-items a:first-child:hover,
-#showcase .container .content .flex-items a:last-child:hover {
-  background: var(--dark);
-  transition: background 1s;
-}
-
-#showcase .container .content .flex-items a:last-child:hover {
-  color: var(--light);
+#showcase .container .content .flex-items .btn:hover {
+  opacity: 0.8;
 }
 
 /* about */

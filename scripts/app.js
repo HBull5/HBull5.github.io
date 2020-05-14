@@ -2,10 +2,11 @@ let navbar = document.querySelector('#navbar');
 let toggle = document.querySelector('.toggle');
 let body = document.querySelector('body');
 let overlay = document.querySelector('.overlay');
+let buttons = document.querySelectorAll('.btn');
 let prevScrollpos = window.pageYOffset;
 let bg = '#fff';
 let text = '#333';
-let filter = 'rgba(255, 255, 255, 0.6)';
+let filter = 'rgba(255, 255, 255, 0.7)';
 
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
@@ -31,7 +32,7 @@ toggle.addEventListener('click', () => {
     } else {
         bg = '#fff';
         text = '#333';
-        filter = 'rgba(255, 255, 255, 0.6)';
+        filter = 'rgba(255, 255, 255, 0.7)';
     }
     if(currentScrollPos === 0) {
         navbar.style.background = 'none';
@@ -41,4 +42,8 @@ toggle.addEventListener('click', () => {
     body.style.background = bg;
     body.style.color = text;
     overlay.style.background = filter;
+    for(button of buttons) {
+        button.style.background = text;
+        button.style.color = bg;
+    }
 })
