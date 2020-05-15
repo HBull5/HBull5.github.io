@@ -2,15 +2,17 @@ let navbar = document.querySelector('#navbar');
 let toggle = document.querySelector('.toggle');
 let body = document.querySelector('body');
 let overlay = document.querySelector('.overlay');
+let darkOverlays = document.querySelectorAll('.overlay-dark');
 let buttons = document.querySelectorAll('.btn');
 let homeBtn = document.querySelector('#home-btn');
 let logo = document.querySelector('#logo');
-let cards = document.querySelectorAll('.card');
+let cardTexts = document.querySelectorAll('.card-text');
 let footer = document.querySelector('#footer');
 let prevScrollpos = window.pageYOffset;
 let bg = '#fff';
 let text = '#333';
 let filter = 'rgba(255, 255, 255, 0.7)';
+let darkFilter = 'rgba(0, 0, 0, 0.7)';
 let logoColor = 'black';
 
 window.onscroll = function() {
@@ -34,12 +36,14 @@ toggle.addEventListener('click', () => {
         bg = '#333';
         text = '#fff';
         filter = 'rgba(0, 0, 0, 0.7)';
+        darkFilter = 'rgba(255, 255, 255, 0.7)';
         logoColor = 'white';
         toggle.innerHTML = '<i class="fas fa-sun"></i>';
     } else {
         bg = '#fff';
         text = '#333';
         filter = 'rgba(255, 255, 255, 0.7)';
+        darkFilter = 'rgba(0, 0, 0, 0.7)';
         logoColor = 'black';
         toggle.innerHTML = '<i class="fas fa-moon"></i>';
     }
@@ -56,9 +60,11 @@ toggle.addEventListener('click', () => {
         button.style.background = text;
         button.style.color = bg;
     }
-    for(card of cards) {
-        card.style.background = text;
-        card.style.color = bg;
+    for(darkOverlay of darkOverlays) {
+        darkOverlay.style.background = darkFilter;
+    }
+    for(cardText of cardTexts) {
+        cardText.style.color = bg;
     }
     footer.style.background = text;
     footer.style.color = bg;
