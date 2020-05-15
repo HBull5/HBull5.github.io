@@ -1,7 +1,8 @@
 const navbars = document.querySelectorAll('.navbar');
 const desktopNav = document.querySelector('#desktop-nav');
 const mobileNav = document.querySelector('#mobile-nav');
-const toggles = document.querySelectorAll('.toggle');
+const desktopToggle = document.querySelector('#desktop-toggle');
+const mobileToggle = document.querySelector('#mobile-toggle');
 const body = document.querySelector('body');
 const overlay = document.querySelector('.overlay');
 const darkOverlays = document.querySelectorAll('.overlay-dark');
@@ -10,6 +11,7 @@ const homeBtn = document.querySelector('#home-btn');
 const logos = document.querySelectorAll('.logo img');
 const mobileLogo = document.querySelector('#mobile-logo');
 const menuItems = document.querySelector('#menu-items');
+const menuItemElements = document.querySelector('#menu-items li');
 const open = document.querySelector('.open');
 const close = document.querySelector('.close');
 let prevScrollpos = window.pageYOffset;
@@ -21,17 +23,19 @@ let logoColor = 'black';
 
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
-    for(navbar of navbars) {
-        if(currentScrollPos === 0) {
-            desktopNav.style.background = 'none';
-        }
-        else if (prevScrollpos > currentScrollPos) {
-            navbar.style.top = "0";
-            navbar.style.background = bg;
-        } else {
-            navbar.style.top = "-68px";
-            navbar.style.background = bg;
-        }
+    if(currentScrollPos === 0) {
+        desktopNav.style.background = 'none';
+    }
+    else if (prevScrollpos > currentScrollPos) {
+        desktopNav.style.top = "0";
+        mobileNav.style.top = "0";
+        desktopNav.style.background = bg;
+        mobileNav.style.background = bg;
+    } else {
+        desktopNav.style.top = '-68px';
+        mobileNav.style.top = '-68px';
+        desktopNav.style.background = bg;
+        mobileNav.style.background = bg;
     }
     prevScrollpos = currentScrollPos;
 };
@@ -44,30 +48,28 @@ const darkMode = () => {
         filter = 'rgba(0, 0, 0, 0.7)';
         darkFilter = 'rgba(100, 100, 100, 0.6)';
         logoColor = 'white';
-        for(toggle of toggles) {
-            toggle.innerHTML = '<i class="fas fa-sun"></i>';
-        }
+        desktopToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        mobileToggle.innerHTML = '<i class="fas fa-sun"></i>';
     } else {
         bg = '#fff';
         text = '#333';
         filter = 'rgba(255, 255, 255, 0.6)';
         darkFilter = 'rgba(0, 0, 0, 0.7)';
         logoColor = 'black';
-        for(toggle of toggles) {
-            toggle.innerHTML = '<i class="fas fa-moon"></i>';
-        }
+        desktopToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        mobileToggle.innerHTML = '<i class="fas fa-moon"></i>';
     }
-    for(navbar of navbars) {
-        if(currentScrollPos === 0) {
-            desktopNav.style.background = 'none';
-        } else {
-            navbar.style.background = bg;
-        }
+    if(currentScrollPos === 0) {
+        desktopNav.style.background = 'none';
+    } else {
+        desktopNav.style.background = bg;
+        mobileNav.style.background = bg;
     }
     for(logo of logos) {
         logo.setAttribute('src', `img/${logoColor}-logo.png`);
     }
     body.style.background = bg;
+    mobileNav.style.background = bg;
     body.style.color = text;
     overlay.style.background = filter;
     for(button of buttons) {
@@ -79,11 +81,13 @@ const darkMode = () => {
     }
 };
 
-for(toggle of toggles) {
-    toggle.addEventListener('click', () => {
-        darkMode();
-    })
-};
+desktopToggle.addEventListener('click', () => {
+    darkMode();
+});
+
+mobileToggle.addEventListener('click', () => {
+    darkMode();
+});
 
 homeBtn.addEventListener('mouseover', () => {
     for(logo of logos) {

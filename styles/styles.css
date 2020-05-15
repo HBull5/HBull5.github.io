@@ -99,6 +99,7 @@ ul {
 
 #mobile-nav {
   display: none;
+  background: var(--light);
 }
 
 .navbar .container {
