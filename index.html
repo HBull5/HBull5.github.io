@@ -16,120 +16,116 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="container">
-        <div class="logo">
-          <img id="logo" src="img/black-logo.png" alt="logo">
-          <h2 id="home-btn"><a href="#showcase">Harcourt Bull</h2></a>
-        </div>
-        <ul>
-          <li><a href="#about">about</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#contact">contact</a></li>
-          <!-- <li class="toggle">
-            <input type="checkbox">
-            <div class="switch">
-              <i class="far fa-sun"></i>
-            </div>
-          </li> -->
-          <li class="toggle">
-            <i class="fas fa-moon"></i>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- End Navbar -->
+  <!-- Things to do: Fix favicon color, set footer to px instead of vh, make site responsive, add resume link, add linkedIn link, add title element to projects section -->
 
-    <!-- Showcase -->
-    <section id="showcase">
-      <div class="overlay"></div>
-      <div class="container">
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="logo">
+        <img id="logo" src="img/black-logo.png" alt="logo">
+        <h2 id="home-btn"><a href="#showcase">Harcourt Bull</h2></a>
+      </div>
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#project">projects</a></li>
+        <li><a href="#footer">contact</a></li>
+        <li class="toggle">
+          <i class="fas fa-moon"></i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Showcase -->
+  <section id="showcase">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="content">
+        <h2 class="mb-1">Hi, I'm Harcourt the <span class="primary-text" id="typewriter"></span></h2>
+        <p class="mb-1">So for starters its pronounced (Har·court) but you can call me Nick. I'm a dependable, hard working team player. I'm excited to see what projects could benefit from my unique skill set!</p>
+        <div class="btns flex-items">
+          <a href="#portfolio" class="btn">View My Work</a>
+          <a href="#about" class="btn">More About Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Showcase -->
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
         <div class="content">
-          <h2 class="mb-1">Hi, I'm Harcourt the <span class="primary-text" id="typewriter"></span></h2>
-          <p class="mb-1">So for starters its pronounced (Har·court) but you can call me Nick. I'm a dependable, hard working team player. I'm excited to see what projects could benefit from my unique skill set!</p>
-          <div class="btns flex-items">
-            <a href="#portfolio" class="btn">View My Work</a>
-            <a href="#about" class="btn">More About Me</a>
-          </div>
+          <h2 class="mb-1 primary-text">Who is this guy?</h2>
+          <p>I'm a web developer living and working in Augusta GA. I'm a veteran currently pursuing my Associates Degree in Computer Programming at Augusta Technical College due to graduate in mid August. During that time I've been interning as at the <a class="link primary-text" href="https://www.theclubhou.se/" target="_blank">Clubhou.se</a> helping teach others web development. For more info feel free to check out some of my projects or my <a href="#" class="link primary-text">resumé</a>. Looking for some hired help? Send me a <a href="#footer" class="link primary-text">message</a> about an upcoming project!</p>
         </div>
+        <img src="img/headshot.png" alt="me">
       </div>
-    </section>
-    <!-- End Showcase -->
+    </div>
+  </section>
+  <!-- End About -->
 
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="about-grid">
-          <div class="content">
-            <h2 class="mb-1 primary-text">Who is this guy?</h2>
-            <p>I'm a web developer living and working in Augusta GA. I'm a veteran currently pursuing my Associates Degree in Computer Programming at Augusta Technical College due to graduate in mid August. During that time I've been interning as at the <a class="link primary-text" href="https://www.theclubhou.se/" target="_blank">Clubhou.se</a> helping teach others web development. For more info feel free to check out some of my projects or my <a href="#" class="link primary-text">resumé</a>. Looking for some hired help? Send me a <a href="#contact" class="link primary-text">message</a> about an upcoming project!</p>
+  <!-- Project -->
+  <section id="project">
+    <div class="container">
+      <div class="project-grid">
+        <a href="https://foltz-photography.herokuapp.com/" target="_blank">
+          <div class="overlay-dark"></div>
+          <div class="card card-1">
+            <p class="card-text">Photography Portfolio</p>
           </div>
-          <img src="img/headshot.png" alt="me">
-        </div>
-      </div>
-    </section>
-    <!-- End About -->
-
-    <!-- Project -->
-    <section id="project">
-      <div class="container">
-        <div class="project-grid">
-          <a href="https://foltz-photography.herokuapp.com/" target="_blank">
-            <div class="overlay-dark"></div>
-            <div class="card card-1">
-              <p class="card-text">Photography Portfolio</p>
-            </div>
-          </a>
-          <a href="https://github.com/HBull5/PHP2_TechProject" target="_blank">
-            <div class="overlay-dark"></div>
-            <div class="card card-2">
-              <p class="card-text">PHP Admin Panel</p>
-            </div>
-          </a>
-          <a href="https://quizzical-darwin-c8d14a.netlify.app/" target="_blank">
-            <div class="overlay-dark"></div>
-            <div class="card card-3">
-              <p class="card-text">Chuck Norris Joke Generator</p>
-            </div>
-          </a>
-          <a href="https://competent-hugle-c28ee8.netlify.app/" target="_blank">
-            <div class="overlay-dark"></div>
-            <div class="card card-4">
-              <p class="card-text">Library App</p>
-            </div>
-          </a>
-          <a href="https://musing-brahmagupta-d47415.netlify.app/" target="_blank">
-            <div class="overlay-dark"></div>
-            <div class="card card-5">
-              <p class="card-text">Palindrome Validator</p>
-            </div>
-          </a>
-          <a href="https://codepen.io/hbull5/full/wvKraKR" target="_blank">
-            <div class="overlay-dark"></div>
-            <div class="card card-6">
-              <p class="card-text">Slideshow App</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- End Project -->
-
-    <!-- Footer -->
-    <section id="footer">
-      <div class="container">
-        <div class="flex-items">
-          <h3 class="mb-1">Stay Connected</h3>
-          <div class="social">
-            <a href="https://github.com/HBull5" target="_blank"><i class="fab fa-github mx-2"></i></a>
-            <a href="https://codepen.io/hbull5" target="_blank"><i class="fab fa-codepen mx-2"></i></a>
-            <a href="#"><i class="fab fa-linkedin mx-2"></i></a>
+        </a>
+        <a href="https://github.com/HBull5/PHP2_TechProject" target="_blank">
+          <div class="overlay-dark"></div>
+          <div class="card card-2">
+            <p class="card-text">PHP Admin Panel</p>
           </div>
+        </a>
+        <a href="https://quizzical-darwin-c8d14a.netlify.app/" target="_blank">
+          <div class="overlay-dark"></div>
+          <div class="card card-3">
+            <p class="card-text">Chuck Norris Joke Generator</p>
+          </div>
+        </a>
+        <a href="https://competent-hugle-c28ee8.netlify.app/" target="_blank">
+          <div class="overlay-dark"></div>
+          <div class="card card-4">
+            <p class="card-text">Library App</p>
+          </div>
+        </a>
+        <a href="https://musing-brahmagupta-d47415.netlify.app/" target="_blank">
+          <div class="overlay-dark"></div>
+          <div class="card card-5">
+            <p class="card-text">Palindrome Validator</p>
+          </div>
+        </a>
+        <a href="https://codepen.io/hbull5/full/wvKraKR" target="_blank">
+          <div class="overlay-dark"></div>
+          <div class="card card-6">
+            <p class="card-text">Slideshow App</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End Project -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="flex-items">
+        <h3 class="mb-1">Stay Connected</h3>
+        <div class="social">
+          <a href="https://github.com/HBull5" target="_blank"><i class="fab fa-github mx-2"></i></a>
+          <a href="https://codepen.io/hbull5" target="_blank"><i class="fab fa-codepen mx-2"></i></a>
+          <a href="#"><i class="fab fa-linkedin mx-2"></i></a>
         </div>
       </div>
-    </section>
-    <!-- End Footer -->
+    </div>
+  </section>
+  <!-- End Footer -->
 
 <script src="scripts/app.js"></script>
 <script src="scripts/typewriter.js"></script>
