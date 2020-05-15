@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- styles -->
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="styles/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 1100px)" href="styles/mobile.css">
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <!-- font awesome -->
@@ -16,13 +16,14 @@
 </head>
 <body>
 
-  <!-- Things to do: Fix favicon color, set footer to px instead of vh, make site responsive, add resume link, add linkedIn link, add title element to projects section -->
+  <!-- Things to do: Fix favicon color, make site responsive, add resume link, add linkedIn link, make footer same color as everything else -->
 
   <!-- Navbar -->
-  <nav id="navbar">
+  <!-- desktop nav -->
+  <nav class="navbar" id="desktop-nav">
     <div class="container">
       <div class="logo">
-        <img id="logo" src="img/black-logo.png" alt="logo">
+        <img src="img/black-logo.png" alt="logo">
         <h2 id="home-btn"><a href="#showcase">Harcourt Bull</h2></a>
       </div>
       <ul>
@@ -30,6 +31,23 @@
         <li><a href="#project">projects</a></li>
         <li><a href="#footer">contact</a></li>
         <li class="toggle">
+          <i class="fas fa-moon"></i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- mobile nav -->
+  <nav class="navbar" id="mobile-nav">
+    <div class="container">
+      <div class="logo">
+        <img src="img/black-logo.png" alt="logo">
+      </div>
+      <i class="fas fa-ellipsis-v"></i>
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#project">projects</a></li>
+        <li><a href="#footer">contact</a></li>
+        <li class="mobile-toggle">
           <i class="fas fa-moon"></i>
         </li>
       </ul>
@@ -70,6 +88,7 @@
   <!-- Project -->
   <section id="project">
     <div class="container">
+      <h2 class="primary-text mb-2">Some of my work</h2>
       <div class="project-grid">
         <a href="https://foltz-photography.herokuapp.com/" target="_blank">
           <div class="overlay-dark"></div>
@@ -127,7 +146,8 @@
   </section>
   <!-- End Footer -->
 
-<script src="scripts/app.js"></script>
+<script src="scripts/dark-mode.js"></script>
+<script src="scripts/mobile-nav.js"></script>
 <script src="scripts/typewriter.js"></script>
 </body>
 </html>
