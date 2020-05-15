@@ -11,7 +11,7 @@ const homeBtn = document.querySelector('#home-btn');
 const logos = document.querySelectorAll('.logo img');
 const mobileLogo = document.querySelector('#mobile-logo');
 const menuItems = document.querySelector('#menu-items');
-const menuItemElements = document.querySelector('#menu-items li');
+const mobileLinks = document.querySelectorAll('.mobile-link');
 const open = document.querySelector('.open');
 const close = document.querySelector('.close');
 let prevScrollpos = window.pageYOffset;
@@ -107,7 +107,7 @@ open.addEventListener('click', () => {
     mobileLogo.style.display = 'none';
     open.style.display = 'none';
     menuItems.style.display = 'flex';
-})
+});
 
 close.addEventListener('click', () => {
     body.style.overflow = 'scroll';
@@ -115,4 +115,14 @@ close.addEventListener('click', () => {
     mobileLogo.style.display = 'block';
     open.style.display = 'block';
     menuItems.style.display = 'none';
-})
+});
+
+for(link of mobileLinks) {
+    link.addEventListener('click', () => {
+        body.style.overflow = 'scroll';
+        mobileNav.style.height = '70px';
+        mobileLogo.style.display = 'block';
+        open.style.display = 'block';
+        menuItems.style.display = 'none';
+    })
+};
