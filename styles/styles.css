@@ -212,10 +212,6 @@ ul {
   font-size: 1.5rem;
 }
 
-#showcase .container .content p a {
-  font-size: 1.5rem;
-}
-
 #showcase .container .content .flex-items a:first-child {
   margin-right: 1rem;
 }
@@ -281,6 +277,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #project .container .project-grid .card p {
