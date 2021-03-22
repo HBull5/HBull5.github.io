@@ -1,0 +1,13 @@
+body {
+    overflow-x: hidden;
+    overflow-y: none;
+}
+
+.hover {
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.hover:hover {
+    transform: scale(1.025);
+}
